@@ -1,0 +1,23 @@
+{
+  "name": "AlreadyRed",
+  "image": "icon.png",
+  "banner": "banner.png",
+  "libraryLogo": "",
+  "author": "lolkekbypek",
+  "description": "Проклятая вещь которую я делал по гайду, и помощи комьюнити PulseSync",
+  "version": "1.0.0",
+  "css": "style.css",
+  "script": "script.js",
+  "type": "theme",
+  "tags": [
+    "dark",
+    "red",
+    "spongebob",
+    "squidward"
+  ],
+  "dependencies": [],
+  "allowedUrls": [
+    "http://127.0.0.1:2007/"
+  ],
+  "supportedVersions": []
+}

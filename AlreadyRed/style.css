@@ -1,0 +1,46 @@
+:root {
+  --main-color: #522121;
+  --block-color: #421515;
+  --font-color: #fed42b;
+  --font-inactive-color: #a08001;
+  --buttons-hover: #00ff15;
+  --background: #700000;
+}
+
+.ym-dark-theme {
+    --ym-background-color-primary-enabled-basic: var(--background);
+    --ym-background-color-primary-enabled-content: var(--block-color);
+    --ym-controls-color-primary-text-enabled: var(--font-inactive-color);
+    --ym-controls-color-primary-text-enabled_variant: var(--font-color);
+    --ym-controls-color-primary-default-enabled: var(--font-color);
+    --ym-background-color-primary-enabled-popover: var(--block-color);
+    --ym-controls-color-secondary-on_default-hovered: var(--font-color);
+    --ym-controls-color-secondary-text-enabled: var(--font-color);
+    --ym-controls-color-secondary-on_default-enabled: var(--font-color);
+    --ym-controls-color-primary-on_outline-enabled: var(--font-color);
+    --ym-controls-color-secondary-outline-selected: var(--block-color);
+    --ym-controls-color-primary-outline-selected_stroke: var(--font-color);
+    --ym-controls-color-primary-outline-enabled: var(--block-color);
+    --ym-background-color-secondary-enabled-blur: #3b1818;
+    --ym-slider-color-primary-enabled: var(--font-color);
+    --ym-controls-color-secondary-on_outline-enabled: #ff8800;
+    --ym-controls-color-secondary-text-enabled_variant: var(--font-color);
+}
+
+[class*="VibeBlock_root"] {
+    position: relative;
+    background-color: #00f;
+    margin: 10px 30px 10px;
+    border-radius: 5px;
+    background: url("http://127.0.0.1:2007/assets/banner.png?name=AlreadyRed")
+        no-repeat center;
+    background-size: cover;
+    max-height: 550px;
+}
+
+[class*="FullscreenPlayerDesktop_important"] {
+    background-color: var(--background) !important;
+    background: url("http://127.0.0.1:2007/assets/banner.png?name=AlreadyRed")
+        no-repeat center;
+    background-size: cover;
+}
