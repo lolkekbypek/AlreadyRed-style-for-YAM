@@ -13,7 +13,7 @@
 
 ## Установка:
 
-1.Скачиваете архив.
+1.Скачиваете [архив](https://github.com/lolkekbypek/AlreadyRed-style-for-YAM/releases/tag/AlreadyRed).
 
 2.Заходите в PulseSync, аддоны и жмёте "Директория аддонов".
 
