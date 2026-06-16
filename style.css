@@ -1,0 +1,164 @@
+:root {
+  --main-color: #522121;
+  --block-color: #421515;
+  --font-color: #fed42b;
+  --font-inactive-color: #a08001;
+  --buttons-hover: #00ff15;
+  --background: #700000;
+  --vibe-gradient-stop-15: #700000; /* Твой цвет вместо чёрного */
+}
+
+.ym-dark-theme {
+    --ym-background-color-primary-enabled-basic: var(--background);
+    --ym-background-color-primary-enabled-content: var(--block-color);
+    --ym-controls-color-primary-text-enabled: var(--font-inactive-color);
+    --ym-controls-color-primary-text-enabled_variant: var(--font-color);
+    --ym-controls-color-primary-default-enabled: var(--font-color);
+    --ym-background-color-primary-enabled-popover: var(--block-color);
+    --ym-controls-color-secondary-on_default-hovered: var(--font-color);
+    --ym-controls-color-secondary-text-enabled: var(--font-color);
+    --ym-controls-color-secondary-on_default-enabled: var(--font-color);
+    --ym-controls-color-primary-on_outline-enabled: var(--font-color);
+    --ym-controls-color-secondary-outline-selected: var(--block-color);
+    --ym-controls-color-primary-outline-selected_stroke: var(--font-color);
+    --ym-controls-color-primary-outline-enabled: var(--block-color);
+    --ym-background-color-secondary-enabled-blur: #3b1818;
+    --ym-slider-color-primary-enabled: var(--font-color);
+    --ym-controls-color-secondary-on_outline-enabled: #ff8800;
+    --ym-controls-color-secondary-text-enabled_variant: var(--font-color);
+}
+
+
+[style*="--vibe-gradient-stop"]:not([class*="Button"]):not([class*="button"]):not([class*="reset"]):not([class*="Reset"]) {
+    background-image: none !important;
+    background: transparent !important;
+}
+
+[class*="VibePage_root"],
+[data-test-id="MAIN_PAGE"],
+[class*="MainPage_vibe"] {
+    
+    /* ===== ТЕКСТ ===== */
+    & [class*="track"],
+    & [class*="Track"],
+    & [class*="title"],
+    & [class*="Title"] {
+        color: #ffd700 !important;
+        text-shadow: none !important;
+    }
+    
+    & [class*="artist"],
+    & [class*="Artist"] {
+        color: #ff8800 !important;
+        text-shadow: none !important;
+    }
+    
+    /* ===== КНОПКИ ===== */
+    & button,
+    & [class*="Button"],
+    & [class*="button"] {
+        border-radius: 15% !important;
+        color: #ff8800 !important;
+        text-shadow: none !important;
+        /* Убираем box-shadow по умолчанию */
+        box-shadow: none !important;
+    }
+    
+    & button:hover {
+        background-color: rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7) !important;
+    }
+}
+
+[class*="viberesetbutton"],
+[class*="VibeReset"],
+[class*="reset"],
+[class*="Reset"] {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -webkit-text-shadow: none !important;
+}
+
+[class*="VibePage_root"] [class*="reset"],
+[class*="VibePage_root"] [class*="Reset"],
+[data-test-id="MAIN_PAGE"] [class*="reset"],
+[data-test-id="MAIN_PAGE"] [class*="Reset"] {
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+[class*="viberesetbutton"] *,
+[class*="VibeReset"] * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+[class*="VibeBlock_root"] {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    margin: 10px 30px 10px;
+    border-radius: 5px;
+    background: url("http://127.0.0.1:2007/assets/banner.png?name=AlreadyRed")
+        no-repeat center;
+    background-size: cover;
+    max-height: 550px;
+}
+
+[class*="FullscreenPlayerDesktop_important"] {
+    background-color: var(--background) !important;
+    background: url("http://127.0.0.1:2007/assets/banner.png?name=AlreadyRed")
+        no-repeat center;
+    background-size: cover;
+}
+
+[class*="syncLyrics"],
+[class*="SyncLyrics"],
+[class*="FullscreenPlayerDesktopContent_syncLyricsContent"] {
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    mask: none !important;
+    -webkit-mask: none !important;
+    mask-mode: none !important;
+    -webkit-mask-mode: none !important;
+    mask-composite: none !important;
+    -webkit-mask-composite: none !important;
+}
+
+[class*="syncLyrics"]::before,
+[class*="syncLyrics"]::after,
+[class*="SyncLyrics"]::before,
+[class*="SyncLyrics"]::after,
+[class*="FullscreenPlayerDesktopContent_syncLyricsContent"]::before,
+[class*="FullscreenPlayerDesktopContent_syncLyricsContent"]::after {
+    display: none !important;
+    content: none !important;
+    background: transparent !important;
+    background-image: none !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+[class*="FullscreenPlayerDesktopContent"],
+[class*="PlayerDesktopContent"] {
+    --player-average-color-background: transparent !important;
+    background: transparent !important;
+}
+
+[class*="syncLyrics"],
+[class*="SyncLyrics"] {
+    color: #741414 !important; 
+}
+
+[class*="syncLyrics"] [class*="active"],
+[class*="SyncLyrics"] [class*="active"] {
+    color: #ffd700 !important;
+    font-weight: 700 !important;
+}
+
+[class*="syncLyrics"] [class*="line"]:not([class*="active"]),
+[class*="SyncLyrics"] [class*="line"]:not([class*="active"]) {
+    color: #290d0d !important;
+    opacity: 0.7 !important;
+}

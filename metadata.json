@@ -1,0 +1,27 @@
+{
+    "name": "AlreadyRed",
+    "image": "icon.png",
+    "banner": "banner.png",
+    "libraryLogo": "",
+    "author": "lolkekbypekjr",
+    "description": "Обновлено16.06.26. Спасибо человеку который мне предложил обновить и использовать ИИ, желаю ему всего лучшего. Я рад сказать, что каждый кто использовал/использует эту тему может наслаждаться не только в обычных разделах, но и в разделе моей волны!",
+    "version": "2.0.0",
+    "css": "style.css",
+    "script": "script.js",
+    "type": "theme",
+    "tags": [
+        "dark",
+        "red",
+        "spongebob",
+        "squidward"
+    ],
+    "dependencies": [],
+    "conflictsWith": [],
+    "allowedUrls": [
+        "http://127.0.0.1:2007/"
+    ],
+    "supportedVersions": [],
+    "installSource": "local",
+    "id": "4b5bd8e8d8e0b860ab231566",
+    "storeAddonId": "a31b8c52-c846-4917-930e-58399bb2a1d9"
+}
